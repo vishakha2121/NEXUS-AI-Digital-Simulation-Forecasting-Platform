@@ -1,0 +1,10 @@
+﻿version: '3.8'
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: nexus_db
+      POSTGRES_USER: nexus_user
+      POSTGRES_PASSWORD: nexus_password
+    ports:
+      - "5432:5432"
